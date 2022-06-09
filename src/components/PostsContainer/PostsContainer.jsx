@@ -6,12 +6,16 @@ import { usePosts } from "../../hooks/usePosts";
 import styles from "./styles.module.css";
 
 const PostsContainer = () => {
-  const { filterPosts, filteredPosts } = usePosts();
+  const { posts, filterPosts, filteredPosts } = usePosts();
 
   const handleFilter = (e) => {
     const value = e.target.value;
     filterPosts(value);
   };
+
+  if (posts.length === 0) {
+    return <div></div>;
+  }
 
   return (
     <div className={styles.postsContainer}>
