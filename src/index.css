@@ -6,4 +6,31 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+
+  /* Theme Variables */
+  --background-color: #eee;
+  --text-color: #333;
+  --border-color: #ccc;
+  --input-background: #fff;
+}
+
+body.dark {
+  background-color: var(--body-background);
+
+  /* Theme Variables */
+  --background-color: #333;
+  --text-color: #fff;
+  --input-background: #555;
+  --border-color: #444;
+  --body-background: #777;
+}
+
+h1 {
+  color: var(--text-color);
+}
+
+.theme-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }

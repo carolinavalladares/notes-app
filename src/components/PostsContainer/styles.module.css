@@ -2,8 +2,9 @@
   max-width: 700px;
   margin: 0 auto 50px;
   width: 100%;
-  border: 2px solid #eee;
+  border: 2px solid var(--border-color);
   border-radius: 10px;
+  background-color: var(--input-background);
 }
 .filterContainer {
   display: flex;
@@ -11,13 +12,14 @@
   align-items: center;
   justify-content: center;
   border-radius: 7px 7px 0 0;
-  background-color: #eee;
+  background-color: var(--background-color);
   margin-bottom: 10px;
   padding: 10px 0;
 }
 .filterContainer p {
   margin: 0;
   margin-bottom: 8px;
+  color: var(--text-color);
 }
 
 .filterSelect {
@@ -28,7 +30,9 @@
   font-family: "Montserrat", sans-serif;
   padding-left: 10px;
   border-radius: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
+  background-color: var(--input-background);
+  color: var(--text-color);
 }
 
 .postsWrapper {

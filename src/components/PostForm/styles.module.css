@@ -4,7 +4,7 @@
 
   margin: 0 auto;
 
-  background-color: #eee;
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
 
@@ -18,11 +18,12 @@
   margin-bottom: 15px;
   height: 42px;
   border-radius: 10px;
-  border: 2px solid #ccc;
+  border: 2px solid var(--border-color);
   padding-left: 10px;
   outline: none;
   font-family: "Montserrat", sans-serif;
-  color: #292929;
+  color: var(--text-color);
+  background-color: var(--input-background);
 }
 
 .textInput {
@@ -30,16 +31,17 @@
   max-width: 100%;
   min-width: 100%;
   border-radius: 10px;
-  border: 2px solid #ccc;
+  border: 2px solid var(--border-color);
   padding: 10px;
   outline: none;
   font-family: "Montserrat", sans-serif;
-  color: #292929;
+  color: var(--text-color);
+  background-color: var(--input-background);
 }
 
 .titleInput::placeholder,
 .textInput::placeholder {
-  color: #bbb;
+  color: var(--text-color);
 }
 
 .submitBtn {
@@ -63,7 +65,7 @@
   margin-left: 5px;
   display: flex;
   align-items: center;
-  color: #333;
+  color: var(--text-color);
   cursor: pointer;
 }
 .importantInput {
@@ -71,7 +73,7 @@
   height: 20px;
   border-radius: 50%;
   margin-right: 8px;
-  border: 1px solid #333;
+  border: 1px solid var(--text-color);
   position: relative;
   display: flex;
   align-items: center;

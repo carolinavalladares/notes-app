@@ -1,0 +1,24 @@
+.switch {
+  height: 30px;
+  width: 30px;
+  background-color: #eee;
+
+  border-radius: 80px;
+  border: 1px solid var(--border-color);
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.switch svg {
+  fill: #333;
+  width: 20px;
+  height: 20px;
+}
+
+/* .switch.active {
+  background-color: tomato;
+} */
