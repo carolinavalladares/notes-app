@@ -1,0 +1,55 @@
+.post {
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  position: relative;
+}
+.post:last-of-type {
+  margin-bottom: 0;
+}
+
+.post h4 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.post p {
+  margin: 0;
+  line-break: anywhere;
+}
+
+.importantFlag {
+  background-color: tomato;
+  width: 15px;
+  height: 20px;
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+  right: -5px;
+  border-radius: 3px;
+}
+
+.deleteBtn {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.deleteBtn svg {
+  width: 17px;
+  height: 15px;
+  fill: #aaa;
+  transition: all 0.1s linear;
+}
+
+.deleteBtn:hover svg {
+  fill: tomato;
+}
